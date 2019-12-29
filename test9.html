@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>scope ofarray </title>
+         <script type="text/javascript">
+           function employee(emp_name,emp_sal,emp_id,emp_age)
+            {
+                this.emp_name=emp_name;
+                this.emp_sal=emp_sal;
+                this.emp_id=emp_id;
+                this.emp_age=emp_age;
+                 
+                this.empmeeting =function()
+                { 
+                    document.write("<h1>"+emp_name+"   with  "+emp_id+"  is  attending meeting at 4 pm</h1>")
+                }
+                   
+            }   
+            //delete car.emp_name;
+               var employee1= new employee("Akash","90000", "ID43","34");
+               var employee2= new employee("Sameer", "100000","ID67","38");
+               
+               employee1.empmeeting();
+               employee2.empmeeting();
+               document.write("<h2> both attended meeting</h2>")
+               
+          
+         </script>
+    </head>
+
+</html>

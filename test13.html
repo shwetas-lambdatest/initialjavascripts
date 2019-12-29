@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>DOM manipulation</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+         var select=document.getElementById("CountrySelect");
+         alert("your destination is:     "+select.options[select.selectedIndex].value);
+        }
+        
+        </script>
+    </head>
+    <body>
+        <select id="CountrySelect">
+            <option value="Select">Select</option>
+            <option value="London">London</option>
+            <option value="Washington DC">Washington DC</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Sydney">Sydney</option>
+        </select>
+        
+    <button onclick="fn1()" value="country">Destination Selected</button> 
+
+    </body>
+</html>

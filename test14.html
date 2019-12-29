@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>DOM validation</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var username=document.getElementById("un");
+            var password=document.getElementById("pass");
+            if(username.value.trim()==""|| password.value.trim()=="")  //trim() will convert space into blank
+                {
+                   //alert("please enter username/password ");
+                  // username.style.border=" solid 3px red"  //css
+                  document.getElementById("invaliduser").style.visibility="visible";
+                   password.style.border=" solid 3px red"  //css
+                   return false;
+                }
+
+            else if(password.value.trim().length<=5)
+                {
+                    alert("password is too short, make it more than 5 letters/numbers");
+                    return false;
+                }
+                else
+                {
+                    true;
+                }    
+        }
+        
+        </script>
+    </head>
+    <body>
+        <form  onsubmit="return fn1()"   action="homepage.html" >
+           <input type="text" id="un"  placeholder ="enter username"><br>
+           <label id="invaliduser"  style="color: red; visibility:hidden;">Invalid User</label><br>
+
+           <input  type="password" id="pass"  placeholder ="enter password"><br>
+           <input id="crt1" type="radio" >Remember Password</input><br>
+
+           <button type="submit">Submit</button><br></br>
+           
+         
+      </form>
+    </body>
+</html>

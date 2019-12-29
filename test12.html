@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>DOM manipulation 2</title>
+          <script type="text/javascript">
+           function fn1()
+           {
+               var ctr1= document.getElementById("crt1");
+               var ctr2= document.getElementById("crt2");
+               var ctr3= document.getElementById("crt3");
+               var ctr4= document.getElementById("crt4");
+
+               if(ctr1.checked==true)
+               alert(ctr1.value);
+               else if(ctr2.checked==true)
+               alert(ctr2.value);
+               else if(ctr3.checked==true)
+               alert(ctr3.value);
+               else if (ctr4.checked==true)
+               alert(ctr4.value)
+               else
+               alert("please select your favorite channel")
+           }
+          
+          </script>
+    </head>
+     <body>
+         <input id="crt1"  name="n1" type="radio" value="News ">News channels</input>
+         <br></br>
+         <input id="crt2"  name="n1" type="radio" value="Entertainment">Entertainment channels</input>
+         <br></br>
+         <input id="crt3" name="n1"  type="radio" value="Geographic">Geographic channels</input>
+         <br></br>
+         <input id="crt4" name="n1" type="radio" value="Sports">Sports channels</input>
+         <br></br>
+         <button onclick="fn1()" id="btn1">Select your favorite choice</button>
+        </body>
+
+</html>
